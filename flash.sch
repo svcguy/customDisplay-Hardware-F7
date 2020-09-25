@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title "Flash"
+Date "2020-09-16"
+Rev "A0"
+Comp "svcguy"
+Comment1 "Checked by Andy"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Custom_KiCAD:MT25QL512ABB U5
+U 1 1 649BEBBC
+P 5650 3850
+F 0 "U5" H 5650 4415 50  0000 C CNN
+F 1 "MT25QL512ABB" H 5650 4324 50  0000 C CNN
+F 2 "Custom_KICAD:W-PDFN-8" H 5650 4600 50  0001 C CNN
+F 3 "https://www.micron.com/~/media/documents/products/data-sheet/nor-flash/serial-nor/mt25q/die-rev-b/mt25q_qlkt_l_512_abb_0.pdf" H 5650 3850 50  0001 C CNN
+F 4 "C88868" H 5650 3850 50  0001 C CNN "LCSC"
+F 5 "557-1786-ND" H 5650 3850 50  0001 C CNN "Digikey"
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 649BEF3F
+P 5650 2800
+F 0 "R10" V 5445 2800 50  0000 C CNN
+F 1 "10k" V 5536 2800 50  0000 C CNN
+F 2 "jlcpcb_smt:R_0402_1005Metric" V 5690 2790 50  0001 C CNN
+F 3 "~" H 5650 2800 50  0001 C CNN
+F 4 "C25744" V 5650 2800 50  0001 C CNN "LCSC"
+F 5 "311-10.0KLRCT-ND" V 5650 2800 50  0001 C CNN "Digikey"
+	1    5650 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 3550 5050 3550
+$Comp
+L power:VDD #PWR052
+U 1 1 649BF7FD
+P 6600 2500
+F 0 "#PWR052" H 6600 2350 50  0001 C CNN
+F 1 "VDD" H 6617 2673 50  0000 C CNN
+F 2 "" H 6600 2500 50  0001 C CNN
+F 3 "" H 6600 2500 50  0001 C CNN
+	1    6600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR053
+U 1 1 649BFB6F
+P 6600 4500
+F 0 "#PWR053" H 6600 4250 50  0001 C CNN
+F 1 "GND" H 6605 4327 50  0000 C CNN
+F 2 "" H 6600 4500 50  0001 C CNN
+F 3 "" H 6600 4500 50  0001 C CNN
+	1    6600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 649C00CF
+P 6600 3850
+F 0 "C49" H 6715 3896 50  0000 L CNN
+F 1 "0.1uF" H 6715 3805 50  0000 L CNN
+F 2 "jlcpcb_smt:C_0402_1005Metric" H 6638 3700 50  0001 C CNN
+F 3 "~" H 6600 3850 50  0001 C CNN
+F 4 "C1525" H 6600 3850 50  0001 C CNN "LCSC"
+F 5 "1276-1004-1-ND" H 6600 3850 50  0001 C CNN "Digikey"
+	1    6600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2500 6600 2800
+Wire Wire Line
+	6150 3550 6600 3550
+Connection ~ 6600 3550
+Wire Wire Line
+	6600 3550 6600 3700
+Wire Wire Line
+	6150 4150 6200 4150
+Wire Wire Line
+	6600 4150 6600 4000
+Wire Wire Line
+	6600 4150 6600 4500
+Connection ~ 6600 4150
+Wire Wire Line
+	5800 2800 6600 2800
+Connection ~ 6600 2800
+Wire Wire Line
+	6600 2800 6600 3550
+Wire Wire Line
+	5500 2800 5050 2800
+Wire Wire Line
+	5050 2800 5050 3550
+Entry Wire Line
+	4200 3450 4300 3550
+Entry Wire Line
+	4200 3550 4300 3650
+Entry Wire Line
+	4200 3750 4300 3850
+Entry Wire Line
+	4200 3850 4300 3950
+Entry Wire Line
+	4200 3950 4300 4050
+Entry Wire Line
+	4200 4050 4300 4150
+Wire Bus Line
+	4200 3050 3000 3050
+Text Notes 7600 3750 0    50   ~ 0
+QUADSPI0 - QUADSPI_BK1_IO0\nQUADSPI1 - QUADSPI_BK1_IO1\nQUADSPI2 - QUADSPI_BK1_IO2\nQUADSPI3 - QUADSPI_BK1_IO3\nQUADSPI4 - QUADSPI_BK1_NCS\nQUADSPI5 - QUADSPI_CLK
+Wire Wire Line
+	4300 3550 5050 3550
+Connection ~ 5050 3550
+Wire Wire Line
+	4300 3650 5150 3650
+Wire Wire Line
+	4300 3850 5150 3850
+Wire Wire Line
+	4300 3950 5150 3950
+Wire Wire Line
+	4300 4050 5150 4050
+Wire Wire Line
+	4300 4150 5150 4150
+Text Label 4400 3550 0    50   ~ 0
+QUADSPI4
+Text Label 4400 3650 0    50   ~ 0
+QUADSPI5
+Text Label 4400 3850 0    50   ~ 0
+QUADSPI0
+Text Label 4400 3950 0    50   ~ 0
+QUADSPI1
+Text Label 4400 4050 0    50   ~ 0
+QUADSPI2
+Text Label 4400 4150 0    50   ~ 0
+QUADSPI3
+Text Label 3750 3050 0    50   ~ 0
+QUADSPI[0..5]
+Text HLabel 3000 3050 0    50   BiDi ~ 0
+QUADSPI[0..5]
+Wire Wire Line
+	6150 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 4150
+Connection ~ 6200 4150
+Wire Wire Line
+	6200 4150 6600 4150
+Wire Bus Line
+	4200 3050 4200 4050
+$EndSCHEMATC

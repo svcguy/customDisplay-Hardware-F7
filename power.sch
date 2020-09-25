@@ -1,0 +1,145 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "Power"
+Date "2020-09-16"
+Rev "A0"
+Comp "svcguy"
+Comment1 "Checked by Andy"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5DFC3E31
+P 3850 3500
+F 0 "J7" H 3768 3717 50  0000 C CNN
+F 1 "5V_IN" H 3768 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 3500 50  0001 C CNN
+F 3 "~" H 3850 3500 50  0001 C CNN
+F 4 "DNP" H 3850 3500 50  0001 C CNN "LCSC"
+F 5 "DNP" H 3850 3500 50  0001 C CNN "Digikey"
+	1    3850 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR063
+U 1 1 5DFC411D
+P 4850 3300
+F 0 "#PWR063" H 4850 3150 50  0001 C CNN
+F 1 "+5V" H 4865 3473 50  0000 C CNN
+F 2 "" H 4850 3300 50  0001 C CNN
+F 3 "" H 4850 3300 50  0001 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3500 4850 3500
+Wire Wire Line
+	4850 3500 4850 3300
+$Comp
+L power:GND #PWR065
+U 1 1 5DFC4564
+P 4400 4450
+F 0 "#PWR065" H 4400 4200 50  0001 C CNN
+F 1 "GND" H 4405 4277 50  0000 C CNN
+F 2 "" H 4400 4450 50  0001 C CNN
+F 3 "" H 4400 4450 50  0001 C CNN
+	1    4400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3600 4400 4200
+Wire Wire Line
+	4050 3600 4400 3600
+$Comp
+L Regulator_Linear:AMS1117-3.3 U8
+U 1 1 5DFC4B6C
+P 6450 3500
+F 0 "U8" H 6450 3742 50  0000 C CNN
+F 1 "AMS1117-3.3" H 6450 3651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6450 3700 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 6550 3250 50  0001 C CNN
+F 4 "C6186" H 6450 3500 50  0001 C CNN "LCSC"
+F 5 "497-1242-1-ND" H 6450 3500 50  0001 C CNN "Digikey"
+	1    6450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C53
+U 1 1 5DFC532E
+P 5950 3850
+F 0 "C53" H 6065 3896 50  0000 L CNN
+F 1 "2.2uF" H 6065 3805 50  0000 L CNN
+F 2 "jlcpcb_smt:C_0603_1608Metric" H 5988 3700 50  0001 C CNN
+F 3 "~" H 5950 3850 50  0001 C CNN
+F 4 "C23630" H 5950 3850 50  0001 C CNN "LCSC"
+F 5 "399-7886-1-ND" H 5950 3850 50  0001 C CNN "Digikey"
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C54
+U 1 1 5DFC56FD
+P 6900 3850
+F 0 "C54" H 7015 3896 50  0000 L CNN
+F 1 "2.2uF" H 7015 3805 50  0000 L CNN
+F 2 "jlcpcb_smt:C_0603_1608Metric" H 6938 3700 50  0001 C CNN
+F 3 "~" H 6900 3850 50  0001 C CNN
+F 4 "C23630" H 6900 3850 50  0001 C CNN "LCSC"
+F 5 "399-7886-1-ND" H 6900 3850 50  0001 C CNN "Digikey"
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3500 5950 3500
+Connection ~ 4850 3500
+Wire Wire Line
+	5950 3700 5950 3500
+Connection ~ 5950 3500
+Wire Wire Line
+	5950 3500 4850 3500
+Wire Wire Line
+	6750 3500 6900 3500
+Wire Wire Line
+	6900 3500 6900 3700
+$Comp
+L power:VDD #PWR064
+U 1 1 5DFC679C
+P 7350 3300
+F 0 "#PWR064" H 7350 3150 50  0001 C CNN
+F 1 "VDD" H 7367 3473 50  0000 C CNN
+F 2 "" H 7350 3300 50  0001 C CNN
+F 3 "" H 7350 3300 50  0001 C CNN
+	1    7350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3500 7350 3500
+Wire Wire Line
+	7350 3500 7350 3300
+Connection ~ 6900 3500
+Wire Wire Line
+	5950 4000 5950 4200
+Wire Wire Line
+	5950 4200 4400 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	4400 4200 4400 4450
+Wire Wire Line
+	6450 3800 6450 4200
+Wire Wire Line
+	6450 4200 5950 4200
+Connection ~ 5950 4200
+Wire Wire Line
+	6900 4000 6900 4200
+Wire Wire Line
+	6900 4200 6450 4200
+Connection ~ 6450 4200
+Text Notes 7600 3300 0    50   ~ 10
+VDD Main Supply
+$EndSCHEMATC
