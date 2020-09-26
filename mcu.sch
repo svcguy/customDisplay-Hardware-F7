@@ -4,10 +4,10 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 2 7
-Title "MCU"
+Title "svcguy"
 Date "2020-09-17"
-Rev "A0"
-Comp "svcguy"
+Rev "B1"
+Comp "Checked by Andy"
 Comment1 "Checked by Andy"
 Comment2 ""
 Comment3 ""
@@ -831,7 +831,7 @@ U 1 1 5E971B95
 P 5050 3250
 F 0 "C23" H 5165 3296 50  0000 L CNN
 F 1 "4.7uF" H 5165 3205 50  0000 L CNN
-F 2 "jlcpcb_smt:C_0603_1608Metric" H 5088 3100 50  0001 C CNN
+F 2 "jlcpcb_smt:C_0805_2012Metric" H 5088 3100 50  0001 C CNN
 F 3 "~" H 5050 3250 50  0001 C CNN
 F 4 "C19666" H 5050 3250 50  0001 C CNN "LCSC"
 F 5 "490-10481-1-ND" H 5050 3250 50  0001 C CNN "Digikey"

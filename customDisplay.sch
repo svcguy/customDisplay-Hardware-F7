@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 7
 Title "svcguy"
 Date "2020-09-17"
-Rev "A0"
+Rev "B1"
 Comp "Checked by Andy"
 Comment1 ""
 Comment2 ""

@@ -1,11 +1,10 @@
 Comment,Designator,Footprint,LCSC, Digikey, LCSC
 "0.1uF","C14,C25,C1,C2,C3,C4,C5,C6,C7,C8,C9,C15,C16,C17,C18,C19,C20,C21,C22,C10,C12,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C46,C49,C51,C52","jlcpcb_smt:C_0402_1005Metric","","1276-1004-1-ND","C1525"
-"4.7uF","C23","jlcpcb_smt:C_0603_1608Metric","","490-10481-1-ND","C19666"
+"4.7uF","C23,C50","jlcpcb_smt:C_0805_2012Metric","","490-10481-1-ND","C19666"
 "1uF","C24,C11,C13,C32,C45","jlcpcb_smt:C_0402_1005Metric","","490-10017-1-ND","C52923"
 "2.2uF","C26,C27,C48,C47,C53,C54","jlcpcb_smt:C_0603_1608Metric","","399-7886-1-ND","C23630"
 "15pF","C28,C29","jlcpcb_smt:C_0402_1005Metric","","399-8947-1-ND","C1548"
 "30pF","C30,C31","jlcpcb_smt:C_0402_1005Metric","","311-1666-1-ND","C1570"
-"4.7uF","C50","jlcpcb_smt:C_0805_2012Metric","","490-14466-1-ND","C1779"
 "LED0","D1","jlcpcb_smt:LED_0603_1608Metric","","160-1447-1-ND","C2286"
 "LED1","D2","jlcpcb_smt:LED_0603_1608Metric","","160-1448-1-ND","C72038"
 "LED2","D3","jlcpcb_smt:LED_0603_1608Metric","","160-1446-1-ND","C72043"

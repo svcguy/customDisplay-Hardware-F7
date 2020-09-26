@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "SDRAM"
+Title "svcguy"
 Date "2020-09-17"
-Rev "A0"
-Comp "svcguy"
+Rev "B1"
+Comp "Checked by Andy"
 Comment1 "Checked by Andy"
 Comment2 ""
 Comment3 ""
